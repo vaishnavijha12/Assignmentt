@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAlert()">Show alert</button>
+    <button onclick="PromptName()">Prompt</button>
+    <button onclick="Confirm">Confirm</button>
+    <p id="vish"></p>
+    <script>
+        function showAlert(){
+            alert("This is for show alert fnction")
+        }
+        function PromptName(){
+            let name=prompt("what is ypur name")
+            if(name!=null && name!=''){
+                document.getElementById('vish').innerText='Hello, ',+ name+'';//`${name}`
+            
+            }
+            else{
+                document.getElementById('vish').innerText='you did not enter anything'
+            }
+        }
+        function confirm(){
+            let response=cofirm('are you sure you want to proceed?')
+            if(response){
+                document.getElementById('vish').innerText="You choose to proceed"
+            }
+            else{
+                document.getElementById('vish').innerText="You choose to cancel"
+            }
+
+        }
+        let age=45
+        let message="you are "+age+"years old"
+        console.log(message)
+
+        let name=test
+        document.getElementById('vish').innerText=`Hello, ${name}`
+        
+
+        //functions
+        function showAlert(){
+            alert('Hello everyone')
+        }
+        show()//function with arguments
+        function name(para1 , para2){
+            //body
+        }
+        //objects
+        let user=new Object() //obj constructor
+        let user={}//literal syntax
+
+        let user={
+            name:'test',//key "name" and store value "test"
+            age:45
+        }
+    </script>
+</body>
+</html>
