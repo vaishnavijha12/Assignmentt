@@ -24,7 +24,7 @@
     grid-area: sidebar;
 }
 .footer{
-    background-color: yellowgreen;
+    background-color: rgb(102, 130, 45);
     padding: 10px;
     grid-area: footer;
 }
